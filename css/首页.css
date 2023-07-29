@@ -1,0 +1,109 @@
+#all_div{
+				width: 1300px;
+				height:1600px;
+				/* background-color: red; */
+				margin:auto;
+			}
+			#header{
+				width:100%;
+				height:530px;
+				/* background-color: blue; */
+			}
+			.title1{
+				width: 20%;
+				height: 130px;
+				text-align: center;
+				/* background-color: purple; */
+				margin: auto;
+			}
+			.title{
+				width: 20%;
+				height: 130px;
+				/* background-color: red; */
+			}
+			.content_one{
+				width: 1300px;
+				height:80px;
+				/* background-color: purple; */
+			}
+			.content_two{
+				width: 1300px;
+				height:80px;
+				/* background-color: brown; */
+			}
+			#main{
+				width:100%;
+				height:1000px;
+				/* background-color:yellow; */
+			}
+			.main_one{
+				width: 1300px;
+				height:310px;
+				/* background-color: green; */
+			}
+			.main_one_title{
+				width: 200px;
+				height:70px;
+				/* background-color: red; */
+				line-height: 70px;
+				text-align: center;
+			}
+			.main_one_img{
+				width: 400px;
+				height:230px;
+				/* background-color:purple ; */
+			}
+			.main_two{
+				width: 1300px;
+				height:430px;
+				/* background-color: blue; */
+			}
+			.main_two_title{
+				width: 200px;
+				height:70px;
+				/* background-color: red; */
+			}
+			.main_two_content{
+				width: 1300px;
+				height:100px;
+				/* background-color: brown; */
+			}
+			.main_two_img{
+				width: 1300px;
+				height:230px;
+				/* background-color:purple ; */
+				position: relative;
+			}
+			.img_two_title{
+				/* background-color: aqua; */
+				height: 50px;
+				position: relative;
+			}
+			.img_two_title div{
+				position: absolute;
+				width: 250px;
+				height: 30px;
+				/* background-color: wheat; */
+				font-weight: 600;
+			}
+			.main_three{
+				width: 1300px;
+				height:430px;
+				/* background-color: white; */
+			}
+			.main_three_title{
+				width: 200px;
+				height:70px;
+				/* background-color: red; */
+			}
+			.main_three_img{
+				width: 1300px;
+				height:230px;
+				/* background-color:purple ; */
+				position: relative;
+			}
+			#footer{
+				width:100%;
+				height:200px;
+				/* background-color:green; */
+			}

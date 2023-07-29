@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/history.css">
+    <title>The history of Underwear</title>
+</head>
+<body>
+<div id="container">
+    <nav class="w">
+        <div class="l_box">
+            <a href="./ClothingEditor/index.html">
+                <span>design</span>
+                <img src="./images/icon1.png" alt="">
+            </a>
+            <a href="./history.html">
+                <span>history</span>
+                <img src="./images/icon22.png" alt="">
+            </a>
+        </div>
+        <div class="r_box">
+            <a href="#" onclick="javascript:history.go(-1)">return</a>
+            <a href="./index.html">home</a>
+        </div>
+    </nav>
+    <div id="history">
+        <h1>history</h1>
+        <div class="pic" id="pic">
+            <div class="one">
+                <a href="content1.html">
+                    <span>13th To 18th Century</span>
+                    <img src="./images/13.jpg" alt="">
+                </a>
+            </div>
+            <div class="two">
+                <a href="content2.html">
+                    <span>19th To 20th Century</span>
+                    <img src="./images/19.webp" alt="">
+                </a>
+            </div>
+            <div class="three">
+                <a href="content3.html">
+                    <span>21st Century</span>
+                    <img src="./images/21.webp" alt="">
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var pic = document.getElementById('pic').children;
+    // console.log(pic[0])
+    for (let i = 0; i < pic.length; i++) {
+
+        pic[i].onclick = function () {
+            // console.log(this.className)
+            var cname = this.className
+            // console.log(cname)
+            if (cname == 'two') {
+                console.log(cname)
+                // console.log()
+                var one = document.getElementsByClassName('one')[0]
+                var three = document.getElementsByClassName('three')[0]
+                one.className = 'three'
+                three.className = cname
+                this.className = 'one'
+            } else if (cname == 'three') {
+                var one = document.getElementsByClassName('one')[0]
+                var two = document.getElementsByClassName('two')[0]
+                one.className = 'two'
+                two.className = cname
+                this.className = 'one'
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+canvas {
+  display: block;
+}
+.return{
+  display: inline-block;
+  width: 90px;
+  height: 38px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  line-height: 38px;
+  text-align: center;
+  background: url("../images/icon4.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top:40px;
+  left:60px;
+  z-index: 10;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Salvaje Display Italic";
+    src: url("../font/montserrat/Salvaje Display Italic(1).otf") format("opentype"),
+    url("/font/montserrat/Salvaje Display Italic(1).otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "MontserratAlternates-Medium";
+    src: url("../font/montserrat/MontserratAlternates-Medium.otf") format("opentype"),
+    url("/font/montserrat/MontserratAlternates-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #4B25F6;
+    position: relative;
+    background: url("../images/bg.png");
+    background-size: cover;
+    /*background: linear-gradient(to bottom,rgb(86, 114, 246) ,rgb(86, 114, 246) 4%, rgb(255,255,255),rgb(255,255,255),rgb(138,171,248) 100% );*/
+}
+
+a {
+    color: #4B25F6;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: #4B25F6;
+}
+
+.w {
+    width: 94%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container .slogan {
+    text-align: center;
+    position: absolute;
+    top: 25vh;
+    left: 3%;
+    right: 3%;
+}
+
+#container .slogan h1 {
+    font-size: 255px;
+    font-family: "Salvaje Display Italic";
+    text-transform: uppercase;
+    line-height: 1;
+    vertical-align: middle;
+    text-shadow: 26px 5px 2px rgb(248,254,0);
+    /*text-shadow: 0 0 0.2em #f87, 0 0 0.2em #f87;*/
+}
+#container .slogan h1 em{
+    vertical-align: text-bottom;
+    font-size: 190px;
+}
+
+#container .slogan h1::after {
+    content: '';
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    height: 2px;
+    background: rgb(69,55,214);
+}
+
+#container .menu div {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#container .menu div a {
+    font-family: "MontserratAlternates-Medium";
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#container .menu div:nth-child(2) {
+    flex-grow: 2;
+    text-align: center;
+}
+
+#container .menu div:last-child {
+    text-align: right;
+}
+
+#container .about_text {
+    width: 16%;
+    position: absolute;
+    right: 3%;
+    bottom: 20vh;
+
+}
+
+#container .about_text h4 {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "MontserratAlternates-Medium";
+}
+
+#container .about_text p {
+    margin-top: 20px;
+    font-family: "MontserratAlternates-Medium";
+
+}
+
+@media screen and (max-width: 1366px) {
+
+    #container .slogan {
+        top: 18vh;
+    }
+
+    #container .about_text {
+        width: 22%;
+        bottom: 8vh;
+    }
+
+    #container .slogan h1 {
+        font-size: 170px;
+    }
+
+    #container .slogan h1 em{
+        font-size: 140px;
+    }
+}
